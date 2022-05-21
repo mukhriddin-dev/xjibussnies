@@ -1,0 +1,69 @@
+.register-hero {
+  margin-top: 50px;
+  width: 100%;
+  height: 347px;
+  background-image: url("../../assets/imgs/registerBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 110px;
+}
+.hero-title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 67px;
+  color: #fff;
+  text-align: right;
+  margin-right: -20px;
+}
+
+.from-submit {
+  padding: 26px 37px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  background: #d3d3d3;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  margin-top: 125px;
+  display: inline-block;
+  transition: 0.7s;
+}
+.choice {
+  margin-top: 50px;
+  margin-bottom: 34px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #898989;
+}
+@media only screen and (max-width: 600px) {
+  .register-hero {
+    height: 129px;
+    padding-top: 50px;
+    background-position: -150px center;
+  }
+  .hero-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .from-submit {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 15px 20px;
+    cursor: pointer;
+  }
+  .choice {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 0;
+    margin-bottom: 69px;
+  }
+}

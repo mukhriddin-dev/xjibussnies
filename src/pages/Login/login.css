@@ -1,0 +1,45 @@
+.login-submit {
+  padding: 26px 134px;
+  background: #810202;
+  margin-top: 52px;
+}
+form {
+  width: 50%;
+}
+.support {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.to-register {
+  text-align: center;
+  margin-top: 123px;
+  margin-bottom: 71px;
+}
+.error {
+  color: #fff;
+  border: 1px solid #810202;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  background-color: #cf9696;
+  opacity: 0;
+  transition: 0.7s;
+}
+@media only screen and (max-width: 600px) {
+  .login-submit {
+    padding: 15px 100px;
+    cursor: pointer;
+  }
+  .support {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .to-register {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}

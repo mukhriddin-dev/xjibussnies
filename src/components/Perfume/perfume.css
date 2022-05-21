@@ -1,0 +1,28 @@
+
+.perfume {
+    position: relative;
+  }
+  .perfume-text {
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    top: 467px;
+    left: 38px;
+    color: #fff;
+  }
+  .perfume-title {
+    position: absolute;
+    top: 506px;
+    left: 38px;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    color: #fff;
+
+  }
+  @media only screen and (max-width:600px){
+    .perfume{
+      display: none;
+    }
+  }

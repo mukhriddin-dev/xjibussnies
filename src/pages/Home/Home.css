@@ -1,0 +1,147 @@
+.home {
+  background: url("../../assets/imgs/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0.5px solid #181818;
+  position: relative;
+}
+.home .container {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.home-img{
+  margin-left: 70px;
+}
+.section {
+  margin: 100px 0;
+  margin-left: auto;
+  max-width: 675px;
+  height: 590px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 80px;
+  padding-right: 50px;
+  z-index: 1;
+
+  position: relative;
+}
+.section::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  backdrop-filter: blur(15px);
+  border-radius: 50%;
+  z-index: -1;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.title {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 140%;
+  text-align: left;
+  color: inherit;
+}
+.p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 169.4%;
+  text-align: right;
+  margin-top: 30px;
+}
+.btn {
+  border: 4px solid #e9e9e9;
+  border-radius: 15px;
+  outline: none;
+  display: block;
+  background: inherit;
+  margin-top: 30px;
+  margin-right: auto;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn:hover {
+  background: #e9e9e9;
+}
+.btn:hover .btn__link {
+  color: #000;
+}
+.btn__link {
+  display: block;
+  text-decoration: none;
+  padding: 20px 70px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 169.4%;
+  color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .home {
+    overflow: hidden;
+  }
+  .home-img {
+    width: 250px;
+    height: 280px;
+    margin-top: 70px;
+    margin-left: 0;
+  }
+  .home .container {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 144.4%;
+  }
+  .title--home {
+    text-align: center;
+    width: 237px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .p {
+    font-size: 16px;
+    line-height: 169.4%;
+    text-align: center;
+  }
+  .section {
+    text-align: center;
+    width: 100%;
+    height: 390px;
+    padding-right: 0;
+    padding: 0 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .btn__link {
+    font-size: 12px;
+    line-height: 169.4%;
+    padding: 12px 40px;
+  }
+  .btn {
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section::before {
+    width: 390px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

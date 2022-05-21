@@ -1,0 +1,16 @@
+.footer {
+  background-color: #181818;
+  padding: 32px 0;
+  display: none;
+}
+.footer .container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    display: block;
+  }
+}
