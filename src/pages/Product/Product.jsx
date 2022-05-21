@@ -136,7 +136,7 @@ const Product = () => {
                     name="merchant"
                     value="6218fd58b7785447a0894dc3"
                   />
-                  <input type="hidden" name="amount" value="103113570" />
+                  <input type="hidden" name="amount" value={11200*98,5} />
                   <input type="hidden" name="account[user_id]" value={userId} />
                   <input type="hidden" name="account[perfume_id]" value="2" />
                   <button className="bottom__link" id="2" type="submit">
